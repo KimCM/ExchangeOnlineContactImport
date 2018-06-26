@@ -49,8 +49,8 @@ New-AddressList -Name 'Profidata' -RecipientFilter { Alias -ne $null -and Object
 ```
 
 > Neu angelegte Adresslisten sind leer, selbst wenn du den RecipientFilter richtig konfiguriert hast. Exchange on-premises kennt das cmdlet 
-> (Update-AddressList)[https://docs.microsoft.com/en-us/powershell/module/exchange/email-addresses-and-address-books/update-addresslist?view=exchange-ps). Das gibt es in Exchange Online nicht mehr, s. auch [KB 2955640](https://support.microsoft.com/en-us/help/2955640/new-address-lists-that-you-create-in-exchange-online-don-t-contain-all).
-> Daher kann es notwendig sein, dass du im Exchange Online nach jedem Import diese Adresslisten löschen und neu erzeugen musst.
+> [Update-AddressList](https://docs.microsoft.com/en-us/powershell/module/exchange/email-addresses-and-address-books/update-addresslist?view=exchange-ps). Das gibt es in Exchange Online nicht mehr, s. auch [KB 2955640](https://support.microsoft.com/en-us/help/2955640/new-address-lists-that-you-create-in-exchange-online-don-t-contain-all).
+> Daher kann es notwendig sein, dass du im Exchange Online nach jedem Import diese Adresslisten im Script löschen und neu erzeugen musst.
 
 ## Datensatzbeschreibung
 
