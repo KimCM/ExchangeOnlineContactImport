@@ -43,9 +43,9 @@ Werden viele Kontakte in Exchange importiert geht der Überblick leicht verloren
 Eine solche Adressliste kann einmalig angelegt werden:
 
 ```ps
-New-AddressList -Name 'abraxas' -RecipientFilter { Alias -ne $null -and ObjectCategory -like 'person' -and Company -like 'schwesterfirma1*' }
-New-AddressList -Name 'itechx' -RecipientFilter { Alias -ne $null -and ObjectCategory -like 'person' -and Company -like 'schwesterfirma2*' }
-New-AddressList -Name 'Profidata' -RecipientFilter { Alias -ne $null -and ObjectCategory -like 'person' -and Company -like 'schwesterfirma3*' }
+New-AddressList -Name 'schwesterfirma1' -RecipientFilter { Alias -ne $null -and ObjectCategory -like 'person' -and Company -like 'schwesterfirma1*' }
+New-AddressList -Name 'schwesterfirma2' -RecipientFilter { Alias -ne $null -and ObjectCategory -like 'person' -and Company -like 'schwesterfirma2*' }
+New-AddressList -Name 'schwesterfirma3' -RecipientFilter { Alias -ne $null -and ObjectCategory -like 'person' -and Company -like 'schwesterfirma3*' }
 ```
 
 > Neu angelegte Adresslisten sind leer, selbst wenn du den RecipientFilter richtig konfiguriert hast. Exchange on-premises kennt das cmdlet 
